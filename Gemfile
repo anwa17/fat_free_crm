@@ -13,7 +13,7 @@ when 'mysql'
 when 'postgres'
   gem 'pg'
 else
-  gem 'pg'
+  gem 'sqlite3'
 end
 
 # Removes a gem dependency
@@ -59,6 +59,7 @@ group :development do
 end
 
 group :development, :test do
+  gem 'rdoc'
   gem 'rails-controller-testing'
   gem 'rspec-rails'
   gem 'rspec-activemodel-mocks'
